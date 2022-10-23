@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
 
     public static void main(String[] args) {
@@ -14,8 +14,8 @@ public class Main {
 
         Integer[] secondArray = sortIntegers();
 
-        for(int i = 0; i < secondArray.length; i++){
-            System.out.println(secondArray[i]);
+        for (Integer integer : secondArray) {
+            System.out.println(integer);
         }
     }
 
